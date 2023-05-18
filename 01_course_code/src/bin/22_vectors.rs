@@ -12,9 +12,11 @@
 */
 
 fn main() {
+    //option 1
     let my_numbers = vec![1, 2, 3];
     println!("{:?}", my_numbers);
 
+    // option2
     let mut my_numbers = Vec::new();
     my_numbers.push(1);
     my_numbers.push(2);
@@ -28,11 +30,13 @@ fn main() {
 
     let _my_numbers_2 = Vec::<i32>::new();
 
+    // iterating in a vec
     let my_numbers = vec![1, 2, 3];
     for number in my_numbers {
         println!("{:?}", number);
     }
 
+    //==============================================  Demo start
     let my_scores = vec![
         Test { score: 90 },
         Test { score: 88 },
@@ -45,8 +49,7 @@ fn main() {
     }
 }
 
-// DEMO
-
 struct Test {
     score: i32,
 }
+// A struct for the demo
