@@ -14,8 +14,8 @@ fn main() {
     // let z = add(x, 1);
 }
 
-fn say_hello(name: &str) -> str {
-    "Hello ".to_owned() + name;
+fn say_hello(name: &str) -> String {
+    return "Hello ".to_owned() + name;
 }
 
 fn add(a: i32, b: i32) -> i32 {

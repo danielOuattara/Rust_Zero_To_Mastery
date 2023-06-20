@@ -7,7 +7,7 @@ fn main() {
     println!("{:?} {}", life, life);
     println!("The meaning is {:?}", life);
 
-    //
+    // new !
 
     println!("{life:?}");
     println!("{life}");

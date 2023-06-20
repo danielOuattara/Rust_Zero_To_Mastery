@@ -5,5 +5,5 @@ fn main() {
     // display a message to the user
     println!("Hello World ! ");
 
-    let user_color = "red";
+    let _user_color = "red";
 }
