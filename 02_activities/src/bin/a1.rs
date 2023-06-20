@@ -19,3 +19,11 @@ fn main() {
     first_name();
     last_name();
 }
+
+/*
+cargo run --bin a1
+
+OR
+
+cargo run -q --bin a1
+*/
