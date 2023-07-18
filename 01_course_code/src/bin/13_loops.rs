@@ -25,9 +25,9 @@ fn count_up() {
 }
 
 fn count_down() {
-    let mut counter_j = 5;
+    let mut counter_j = 7;
     loop {
-        println!("{:?}", counter_j);
+        println!("{counter_j:?}");
         counter_j -= 1;
         if counter_j == 0 {
             break;

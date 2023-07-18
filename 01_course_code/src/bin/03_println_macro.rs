@@ -1,9 +1,9 @@
 fn main() {
     let life = 42;
 
-    println!("Hello");
-    println!("{}", life);
-    println!("{:?}", life);
+    println!("Hello"); // ! --> to indicate a macro
+    println!("{}", life); // { } --> token + end user display vision
+    println!("{:?}", life); // :? --> to indicate a debug display vision
     println!("{:?} {}", life, life);
     println!("The meaning is {:?}", life);
 
@@ -11,6 +11,8 @@ fn main() {
 
     println!("{life:?}");
     println!("{life}");
+    println!("The meaning is {life}");
+    println!("The meaning is {life:?}");
 
     /*
 

@@ -1,6 +1,9 @@
 fn subtractor(number1: i32, number2: i32) -> i32 {
     number1 - number2
 }
+fn subtractor_2(number1: i32, number2: i32) -> i32 {
+    return number1 - number2;
+}
 
 fn main() {
     let summation = 2 + 3;
