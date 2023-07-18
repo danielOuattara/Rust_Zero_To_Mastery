@@ -21,6 +21,9 @@ fn main() {
 }
 
 /*
+
+cd to  02_activities directory
+
 cargo run --bin a1
 
 OR

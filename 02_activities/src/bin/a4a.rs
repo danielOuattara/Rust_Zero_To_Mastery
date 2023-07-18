@@ -9,8 +9,18 @@
 
 fn main() {
     let is_morning: bool = true;
+
     match is_morning {
         true => println!("its' true"),
         false => println!("its's false"),
+    }
+
+    match is_morning {
+        true => println!("its' true"),
+        _ => println!("its's false"),
+    }
+
+    match is_morning {
+        _ => println!("its's a match"),
     }
 }
