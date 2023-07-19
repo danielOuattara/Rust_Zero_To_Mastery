@@ -1,29 +1,30 @@
 struct ShippingBox {
-    depth: i32,
-    width: i32,
-    height: i32,
+    depth: u8,
+    width: u8,
+    height: u8,
 }
 
 //------------------------------
 struct GroceryItem {
-    stock: i32,
-    price: f64, // double
+    stock: u16,
+    price: f32, // double
 }
 
 //------------------------------
 fn main() {
-    let my_box_1 = ShippingBox {
+    let my_box_1: ShippingBox = ShippingBox {
         depth: 3,
         width: 2,
         height: 5,
     };
 
-    let height = my_box_1.height;
+    let height: u8 = my_box_1.height;
     println!("The box is {:?} units tall", height);
+    println!("The box is {:?} units tall", my_box_1.height);
 
     //--------------------------------------------
 
-    let cereal = GroceryItem {
+    let cereal: GroceryItem = GroceryItem {
         stock: 10,
         price: 2.99,
     };
