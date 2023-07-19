@@ -25,4 +25,6 @@ fn which_color(color: Colors) {
 }
 fn main() {
     which_color(Colors::Red);
+    which_color(Colors::Blue);
+    which_color(Colors::Green);
 }
