@@ -9,11 +9,11 @@
 // * Destructure the return value into two variables
 // * Use an if..else if..else block to determine what to print
 
-fn coordinator() -> (i32, i32, i32) {
-    return (1, 5, 4);
+fn coordinator() -> (i32, i32) {
+    return (1, 5);
 }
 fn main() {
-    let (_x, _y, _z) = coordinator();
+    let (_x, _y) = coordinator();
     if _y > 5 {
         println!("{} greater than 5 ", _y)
     } else if _y < 5 {
