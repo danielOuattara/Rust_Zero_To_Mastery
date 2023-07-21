@@ -23,3 +23,5 @@ OFFSETS
 ° Represent the number of bytes away from the original address:
     - normally deal with indexes instead
  */
+
+fn main() {}
