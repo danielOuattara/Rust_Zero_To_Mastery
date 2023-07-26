@@ -1,5 +1,5 @@
 /*
-
+ @ time 2h59'
 === OWNERSHIP ===
 
 MANAGING MEMORY
@@ -42,46 +42,20 @@ MANAGING MEMORY
 
 */
 
-// enum Light {
-//     Bright,
-//     Dull,
-// }
-
-// fn display_light(light: &Light) {
-//     match light {
-//         Light::Bright => println!("It's bright"),
-//         Light::Dull => println!("It's dull"),
-//     }
-// }
-
-// fn main() {
-//     let dull = Light::Dull;
-//     display_light(&dull);
-//     display_light(&dull);
-// }
-
-/*  new Demo on ownership
---------------------------- */
-
-struct Book {
-    pages: i32,
-    rating: i32,
+enum Light {
+    Bright,
+    Dull,
 }
 
-fn display_page_count(book: &Book) {
-    println!("pages = {:?}", book.pages);
-}
-
-fn display_rating(book: &Book) {
-    println!("rating = {:?}", book.rating);
+fn display_light(light: &Light) {
+    match light {
+        Light::Bright => println!("It's bright"),
+        Light::Dull => println!("It's dull"),
+    }
 }
 
 fn main() {
-    let book = Book {
-        pages: 355,
-        rating: 9,
-    };
-
-    display_page_count(&book);
-    display_rating(&book);
+    let dull = Light::Dull;
+    display_light(&dull);
+    display_light(&dull);
 }
