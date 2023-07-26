@@ -66,6 +66,8 @@ impl ShippingBox {
     }
 }
 
+//----------------------------------
+
 fn main() {
     let box_1_dimensions = BoxDimensions {
         length: 19.5,
