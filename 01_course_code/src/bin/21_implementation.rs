@@ -14,9 +14,11 @@
 //     let hot = Temperature { degrees_f: 110.0 };
 //     show_temperature(hot);
 // }
-
-//--------------------------------------------------------
-/*  Starting Implementation
+//
+//
+/*--------------------------------------------------------
+Starting Implementation : make show_temperature() part of
+Struct Temperature
 ---------------------------- */
 
 // struct Temperature {
@@ -35,8 +37,8 @@
 // }
 
 //--------------------------------------------------------
-/* Completing Implementation version 1
---------------------------------------- */
+/* Completing Implementation version 1 : taking a reference to self
+-----------------------------------------------------------------*/
 
 // struct Temperature {
 //     degrees_f: f64,
@@ -50,7 +52,8 @@
 
 // fn main() {
 //     let hot = Temperature { degrees_f: 110.0 };
-//     hot.show_temperature();
+//     hot.show_temperature(); // New !
+//     Temperature::show_temperature(&hot); // still OK
 // }
 
 //---------------------------------------------------------
@@ -58,7 +61,7 @@
 --------------------------------------- */
 
 struct Temperature {
-    degrees_f: f64,
+    degrees_f: f32,
 }
 
 impl Temperature {
@@ -67,7 +70,7 @@ impl Temperature {
     }
 
     fn boiling() -> Self {
-        Self { degrees_f: 212.3 }
+        return Self { degrees_f: 212.3 };
     }
 
     fn show_temperature(&self) {
@@ -81,7 +84,9 @@ fn main() {
 
     let cold = Temperature::freezing();
     cold.show_temperature();
+    Temperature::show_temperature(&cold); // Still OK !
 
     let boiling = Temperature::boiling();
     boiling.show_temperature();
+    Temperature::show_temperature(&boiling); // Still OK !
 }
