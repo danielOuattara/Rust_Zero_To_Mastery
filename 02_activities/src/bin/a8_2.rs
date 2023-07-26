@@ -22,7 +22,7 @@ struct Drink {
     fluid_oz: f64,
 }
 
-fn print_drink_info_2(drink: Drink) {
+fn print_drink_info(drink: Drink) {
     match drink.flavor {
         Flavor::Sparkling => println!("flavor: sparkling"),
         Flavor::Sweet => println!("flavor: sweet"),
@@ -35,15 +35,17 @@ fn print_drink_info_2(drink: Drink) {
 //--------------------------------------------------------------------------
 
 fn main() {
-    let drink = Drink {
+    let soda = Drink {
         flavor: Flavor::Sparkling,
         fluid_oz: 8.0,
     };
-    print_drink_info_2(drink);
+    print_drink_info(soda);
+
     //------
+
     let fruity = Drink {
         flavor: Flavor::Sweet,
         fluid_oz: 12.5,
     };
-    print_drink_info_2(fruity);
+    print_drink_info(fruity);
 }
