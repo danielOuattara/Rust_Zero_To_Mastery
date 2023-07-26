@@ -13,7 +13,8 @@
 fn main() {
     let numbers = vec![10, 20, 30, 40];
 
-    // method 1
+    // ----------------------------------  method 1
+
     for number in &numbers {
         if number == &30 {
             println!("thirty");
@@ -23,7 +24,8 @@ fn main() {
 
     println!("--------------");
 
-    //method 2
+    //------------------------------------  method 2
+
     for number in &numbers {
         match number {
             30 => println!("thirty"),
@@ -31,5 +33,5 @@ fn main() {
         };
     }
 
-    println!("vec len = {:?}", &numbers.len());
+    println!("vec len = {:?}", numbers.len());
 }
