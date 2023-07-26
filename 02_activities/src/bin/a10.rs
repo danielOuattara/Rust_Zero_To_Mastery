@@ -21,7 +21,7 @@ fn message_printer(arg: bool) {
 
 fn main() {
     let _number = 90;
-    // let _is_greater_than_100 = if _number > 100 { true } else { false };
-    let _is_greater_than_100 = _number > 100;
-    message_printer(_is_greater_than_100)
+    // let _is_gt_100 = if _number > 100 { true } else { false };
+    let _is_gt_100 = _number > 100;
+    message_printer(_is_gt_100)
 }
