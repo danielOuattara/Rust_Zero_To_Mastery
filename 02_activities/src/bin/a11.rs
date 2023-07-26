@@ -23,10 +23,10 @@ fn display_item_quantity(item: &GroceryItem) {
 }
 
 fn main() {
-    let item = GroceryItem {
+    let soda = GroceryItem {
         id: 12654,
         quantity: 69,
     };
-    display_item_id(&item);
-    display_item_quantity(&item);
+    display_item_id(&soda);
+    display_item_quantity(&soda);
 }
